@@ -1,0 +1,4 @@
+#!/bin/sh
+ssh -p 27085 root@144.34.187.149 "sh /home/java/BrowserInWeb/stop.sh"
+scp -P 27085 `dirname $0`/target/BrowserInWeb-0.0.1-SNAPSHOT.jar root@144.34.187.149:/home/java/BrowserInWeb/BrowserInWeb.jar
+ssh -p 27085 root@144.34.187.149 "sh /home/java/BrowserInWeb/start.sh"

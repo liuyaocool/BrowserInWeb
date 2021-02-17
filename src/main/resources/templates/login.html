@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>login</title>
+    <link rel="stylesheet" th:href="@{/css/base.css}"/>
+
+    <style>
+        form{
+
+        }
+    </style>
+
+    <script th:inline="javascript">
+        var path = [[${path}]];  //获取request中的值
+        // <![CDATA[
+        // ]]>
+    </script>
+
+</head>
+<body>
+
+<form type="get" th:action="@{/check}">
+    <input type="password" name="password">
+</form>
+
+</body>
+</html>

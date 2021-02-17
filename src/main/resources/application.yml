@@ -1,0 +1,13 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /wid
+spring:
+  thymeleaf:
+    #禁用模版缓存
+    cache: false
+    excluded-view-names: /win/doBrowser
+config:
+  version: 0.1
+  password: asdfg
+
